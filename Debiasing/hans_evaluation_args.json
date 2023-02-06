@@ -1,0 +1,23 @@
+{
+    "model_name_or_path": "bert-base-uncased",
+    "task_name": "hans",
+    "output_dir": "./output/mnli/poe_w_cos/0001/42/",
+    "per_device_eval_batch_size": 64,
+    "poe_alpha": 0.3,
+    "poe_beta": 0.03,
+    "loss_fn": "poe",
+    "do_train": false,
+    "do_eval": true,
+    "do_predict": false,
+    "pad_to_max_length": false,
+    "max_seq_length": 128,
+    "report_to": [],
+    "save_strategy": "no",
+    "evaluation_strategy": "epoch",
+    "logging_steps": 2500,
+    "use_fast_tokenizer": true,
+    "group_by_length": true,
+    "save_training_dynamics": false,
+    "save_training_dynamics_after_epoch": false,
+    "poe_mix_type": 0
+}
